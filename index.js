@@ -25,9 +25,12 @@ function fetchSinglePokemon(pokemonUrl) {
    })
       .then((res) => res.json())
       .then((res) => {
-         pokemonList.innerHTML += `<li>
-                                       <img src="${res.sprites.other.dream_world.front_default}" alt="${res.name}">
-                                       <h1>${res.name}</h1>
-                                 </li>`;
+         pokemonList.innerHTML += `
+         <li class="${res.types[0].type.name}">
+            <img src="${res.sprites.other.dream_world.front_default}" alt="${res.name}">
+            <h1>${res.name}</h1>
+            <h3>Height: ${res.height}</h3>
+            <h3>Weight: ${res.weight}</h3>
+         </li>`;
       });
 }
