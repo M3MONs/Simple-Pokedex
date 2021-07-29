@@ -39,7 +39,7 @@ function fetchMultiplePokemons() {
 }
 
 nextBtn.addEventListener("click", function () {
-   if (typeof next !== "undefined") {
+   if (typeof next !== "undefined" && next !== null) {
       pokemonList.innerHTML = "";
       url = next;
       fetchMultiplePokemons();
@@ -47,7 +47,7 @@ nextBtn.addEventListener("click", function () {
 });
 
 prevBtn.addEventListener("click", function () {
-   if (typeof prev !== "undefined") {
+   if (typeof prev !== "undefined" && prev !== null) {
       pokemonList.innerHTML = "";
       url = prev;
       fetchMultiplePokemons();
