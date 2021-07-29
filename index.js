@@ -17,7 +17,7 @@ function fetchMultiplePokemons() {
       .then((res) => res.json())
       .then((res) => {
          next = res.next;
-         prev = res.prev;
+         prev = res.previous;
 
          return Promise.all(
             res.results.map((poke) => {
