@@ -68,3 +68,31 @@ li img {
 li h1 {
    text-transform: uppercase;
 }
+
+.btns-container {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 2rem;
+}
+
+.btns-container button {
+   font-size: 2rem;
+   margin: 0 1.5rem;
+   padding: 0.25rem 2rem;
+   color: #212529;
+   background: #e0a800;
+   border: none;
+   border-radius: 0.25rem;
+   cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+   #pokemonList {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 350px);
+      justify-items: center;
+   }
+   li {
+      min-width: 300px;
+   }
+}
