@@ -8,14 +8,6 @@ const pokemonList = document.getElementById("pokemonList");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
-// prevBtn.addEventListener("click", );
-
-function loadAgain(newUrl) {
-   pokemonList.innerHTML = "";
-   url = newUrl;
-   fetchMultiplePokemons();
-}
-
 fetchMultiplePokemons();
 
 function fetchMultiplePokemons() {
